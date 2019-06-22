@@ -1,0 +1,4 @@
+<image class="about" src="/images/mine/bg.png" />
+<navigator class="nav" target="jdMini" app-id="wx64b0b7188af5289d" open-type="navigate">
+    <image class="vendor" src="/images/mine/vendor.png" />
+</navigator>

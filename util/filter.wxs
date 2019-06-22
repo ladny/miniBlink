@@ -1,0 +1,21 @@
+var format = function(text) {
+    // wxs 把双反斜杠n替换成 换行符
+    if(!text){
+        return
+    }
+    var reg=getRegExp('\\\\n','g');
+    return text.replace(reg,'\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+
+//过滤
+var limit=function(array,length) {
+  return array.slice(0,length)
+}
+
+//js ES6的语法 const
+//wxs !=ES6
+// 模块 一般按照ES5来写就没有问题
+module.exports={
+    format:format,
+    limit:limit
+}
